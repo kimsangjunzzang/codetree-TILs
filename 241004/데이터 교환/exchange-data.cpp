@@ -7,8 +7,13 @@ int main() {
     int b = 6;
     int c = 7;
 
-    b =a; c = b; a = c;
-    cout <<a<<endl;
+    int tmp = b;
+    b = a;
+    int tmp2 = c;
+    c = tmp;
+    
+    a = tmp2;
+    cout << a <<endl;
     cout <<b<<endl;
     cout <<c <<endl;
     return 0;
