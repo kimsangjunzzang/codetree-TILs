@@ -6,7 +6,7 @@ int main() {
     int num; cin >> num;
     if(num>=3000) cout << "book";
     else if(num >= 1000) cout <<"mask";
-    else if(anum >= 500) cout <<"pen";
+    else if(num >= 500) cout <<"pen";
     else cout <<"no";
     return 0;
 }
