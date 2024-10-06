@@ -1,20 +1,20 @@
 #include <iostream>
-#include <cmath>
+#include <iomanip> // setprecision 사용을 위해 포함
 using namespace std;
 
 int main() {
-    // 여기에 코드를 작성해주세요.
-    int a,b; cin >>a >>b;
+    int a, b;
+    cin >> a >> b;
 
-    double sum = a+b;
-    double sub = a-b;
+    // (a + b)와 (a - b)를 계산
+    double sum = a + b;
+    double diff = a - b;
 
-    double res = sum / sub;
+    // 나누기 연산 수행
+    double result = sum / diff;
 
-    res *= 100;
-    res = round(res);
-    res /= 100;
+    // 소수점 둘째 자리까지 반올림하여 출력
+    cout << fixed << setprecision(2) << result << endl;
 
-    cout << res <<endl;
     return 0;
 }
