@@ -7,13 +7,15 @@ int main() {
     for ( int i=0;i<2;i++) {
     int num; cin >> num;
     char gender; cin >>gender;
+    int cnt = 0;
 
     if(num >19 && gender == 'M') {
         cout << 1;
         break;
-    }else {
-        cout << 0;
+    } else {
+        cnt ++;
+        }
     }
-    }
+    if(cnt == 2) cout << 0;
     return 0;
 }
