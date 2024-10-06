@@ -8,6 +8,8 @@ int main() {
     int i = 0;
     while(cin >> num) {
         if(num >29) break;
+        if(num < 20) break;
+
         avg += num;
         i++;
 
