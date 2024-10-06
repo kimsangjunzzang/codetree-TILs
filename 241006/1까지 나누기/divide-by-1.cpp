@@ -12,7 +12,7 @@ int main() {
         // cout << n;
         i++;
         cnt++;
-        if(n < 1) break;
+        if(n <= 1) break;
     }
     cout << cnt;
     return 0;
